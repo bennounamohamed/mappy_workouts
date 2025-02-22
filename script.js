@@ -276,6 +276,12 @@ class App {
       this.renderWorkout(workout);
     });
   }
+
+  // reset the app
+  reset() {
+    localStorage.removeItem('workouts');
+    location.reload();
+  }
 }
 
 const app = new App();
